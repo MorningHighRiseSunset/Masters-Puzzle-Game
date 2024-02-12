@@ -1,0 +1,241 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body {
+  background-color: #00BFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.startArea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startBtn {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  margin: 15px;
+  padding: 10px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  width: calc(100% / 2 - 8px);
+  transition: all 0.5s ease;
+  background: #3571AE;
+}
+
+.startBtn:hover {
+  background: #707d8b;
+}
+
+.container .content {
+  display: none;
+  width: 700px; /* set a fixed width */
+  height: 500px; /* set a fixed height */
+  background-color: #fff;
+  border: 1px solid black; /* thin black border */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3); /* shadow */
+  padding: 20px;
+}
+
+.content .word {
+  user-select: none;
+  font-size: 33px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 24px;
+  margin-right: -24px;
+  word-break: break-all;
+  text-transform: uppercase;
+}
+
+.content .details {
+  margin: 25px 0 20px;
+}
+
+.details p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.details p b {
+  font-weight: 500;
+}
+
+.content input {
+  width: 100%;
+  height: 60px;
+  outline: none;
+  padding: 0 16px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+}
+
+.content input:focus {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.content input::placeholder {
+  color: #aaa;
+}
+
+.content input:focus::placeholder {
+  color: #bfbfbf;
+}
+
+.content .buttons {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-between;
+}
+
+.buttons-container {
+  width: 100%;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  
+}
+
+.buttons button {
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 1px 10%;
+  font-size: 17px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  margin-right: 10px;
+ /* add this line */
+}
+
+.buttons button:active {
+  transform: scale(0.97);
+}
+
+.buttons .refresh-word {
+  background: #6C757D;
+}
+
+.buttons .refresh-word:hover {
+  background: #5f666d;
+}
+
+.buttons .wager-word {
+  background: #3571AE;
+
+  color: #fff;
+  cursor: pointer;
+
+}
+
+.buttons .wager-word:hover {
+  background: #3A7CBF;
+}
+
+.buttons .check-word {
+  background: #3571AE;
+}
+
+.buttons .check-word:hover {
+  background: #3A7CBF;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  padding-top: 300px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+.modal-wrong {
+  border: 2px solid red;
+}
+
+.modal-correct {
+  border: 2px solid green;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.score-area {
+  padding-top: 15px;
+  font-size: 18px;
+  color: black;
+}
+
+.score {
+  color: #3571AE;
+}
+
+/* container for start button */
+.container {
+  position: absolute;
+  left: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50%;
+}
+
+.video-chat {
+  position: absolute;
+  right: 1%;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40%;
+  height: 70%;
+}
